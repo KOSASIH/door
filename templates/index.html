@@ -1,0 +1,10 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home - Door for Pi{% endblock %}
+
+{% block content %}
+<h1>Welcome to Door for Pi</h1>
+<p>Your gateway to advanced data access and analysis on the Pi Network.</p>
+<p><a href="{{ url_for('users.register') }}">Register</a> or <a href="{{ url_for('users.login') }}">Login</a> to get started.</p>
+{% endblock %}

@@ -1,0 +1,32 @@
+<!-- templates/shop.html -->
+{% extends 'base.html' %}
+
+{% block title %}Shop - Door for Pi{% endblock %}
+
+{% block content %}
+<h1>Shop</h1>
+<p>Welcome to the shop! Here are the available products:</p>
+
+<ul>
+    {% for product in products %}
+    <li>
+        <strong>{{ product.name }}</strong>: {{ product.description }} - ${{ product.price }}
+        <button onclick="addToCart('{{ product.id }}')">Add to Cart</button>
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>Add a New Product</h2>
+<form action="{{ url_for('shops.add_product') }}" method="POST">
+    <label for="product_name">Product Name:</label>
+    <input type="text" id="product_name" name="product_name" required>
+    
+    <label for="product_description">Description:</label>
+    <input type="text" id="product_description" name="product_description" required>
+    
+    <label for="product_price">Price:</label>
+    <input type="number" id="product_price" name="product_price" required>
+    
+    <button type="submit">Add Product</button>
+</form>
+{% endblock %}

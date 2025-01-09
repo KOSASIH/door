@@ -1,0 +1,40 @@
+# Web Frameworks
+Flask==2.1.2                     # Lightweight WSGI web application framework
+Flask-RESTful==0.3.9             # Extension for Flask to build REST APIs
+Flask-CORS==3.0.10               # Cross-Origin Resource Sharing support for Flask
+
+# Data Analysis and Machine Learning
+pandas==1.4.2                    # Data manipulation and analysis library
+numpy==1.22.3                     # Fundamental package for numerical computations
+scikit-learn==1.0.2               # Machine learning library for Python
+matplotlib==3.5.1                 # Plotting library for creating static, animated, and interactive visualizations
+seaborn==0.11.2                  # Statistical data visualization library based on matplotlib
+statsmodels==0.13.2               # Statistical modeling and econometrics library
+
+# Database
+SQLAlchemy==1.4.31                # SQL toolkit and Object-Relational Mapping (ORM) system
+Flask-SQLAlchemy==2.5.1          # Flask extension for SQLAlchemy
+psycopg2==2.9.3                   # PostgreSQL database adapter for Python
+redis==4.3.4                      # Redis client for Python
+
+# Security
+cryptography==36.0.1             # Library for cryptography and secure communications
+Flask-JWT-Extended==4.3.1        # JWT (JSON Web Tokens) support for Flask
+Flask-Limiter==2.4.0             # Rate limiting for Flask applications
+python-dotenv==0.19.2            # Read key-value pairs from a .env file
+
+# Asynchronous Programming
+Flask-SocketIO==5.2.0            # Socket.IO integration for Flask applications
+eventlet==0.33.3                  # Asynchronous networking library
+
+# Testing
+pytest==7.1.2                    # Testing framework for Python
+pytest-flask==1.2.0              # Flask integration for pytest
+coverage==6.2                     # Code coverage measurement tool
+
+# API Documentation
+Flask-Swagger-UI==3.61.0         # Swagger UI for Flask applications
+flasgger==0.9.5                  # Flask extension to create Swagger documentation
+
+# Frontend
+Flask-Assets==2.0                # Asset management for Flask applications
